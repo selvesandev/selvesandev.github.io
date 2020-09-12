@@ -38,12 +38,11 @@ vehicle = new Vehicle(),clock = new Clock();
 
 while (vehicle.isTraveling()) {
     clock.increment();
-    if(vehicle.speedInMeter === 299792458 && clockold!>clock.now()){
+    if(vehicle.speedInMeter === 299792458 && clOld!>clock.now())
         print(vehicle.isTimeTravelling()); //True
-    }
-    sleep(1);
+    
     vehicle.increaseSpeed();
-    clockold = clock.increment();
+    clOld = clock.increment();
 }
 </code>
 </pre>
