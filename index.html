@@ -34,9 +34,7 @@
             </small>
             <pre>
                 <code>
-vehicle = new Vehicle();
-const clock = new Clock();
-oldtime = null;
+vehicle = new Vehicle(),clock = new Clock();
 
 while (vehicle.isTraveling()) {
     clock.increment();
@@ -44,10 +42,9 @@ while (vehicle.isTraveling()) {
         print(vehicle.isTimeTravelling()); //True
     }
     sleep(1);
-    clockold = clock.increment();
     vehicle.increaseSpeed();
+    clockold = clock.increment();
 }
-
 </code>
 </pre>
 
