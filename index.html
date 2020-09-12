@@ -34,14 +34,14 @@
             </small>
             <pre>
                 <code>
-vehicle = new Vehicle(),clock = new Clock();
+v = new Vehicle(),c = new Clock();
 
-while (vehicle.isTraveling()) {
-    clock.increment();
-    if(vehicle.speedInMeter === 299792458 && clOld!>clock.now())
-        print(vehicle.isTimeTravelling()); //True
+while (v.isTraveling()) {
+    c.increment();
+    if(v.speedInMeter === 299792458 && clOld!>c.now())
+        print(v.isTimeTravelling()); //True
     
-    sleep(1);vehicle.increaseSpeed();clOld = clock.increment();
+    sleep(1);v.increaseSpeed();clOld = c.increment();
 }
 </code>
 </pre>
