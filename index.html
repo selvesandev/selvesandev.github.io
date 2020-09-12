@@ -41,8 +41,7 @@ while (vehicle.isTraveling()) {
     if(vehicle.speedInMeter === 299792458 && clOld!>clock.now())
         print(vehicle.isTimeTravelling()); //True
     
-    vehicle.increaseSpeed();
-    clOld = clock.increment();
+    sleep(1);vehicle.increaseSpeed();clOld = clock.increment();
 }
 </code>
 </pre>
