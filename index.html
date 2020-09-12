@@ -36,14 +36,20 @@
 
             <pre>
                 <code>
-                    i = 0;
+vehicle = new Vehicle();
+const clock = new Clock();
+oldtime = null;
 
-while (!deck.isInOrder()) {
-    print 'Iteration ' + (i++);
-    deck.shuffle();
+while (vehicle.isTraveling()) {
+    clock.increment();
+    if(vehicle.speedInMeter === 299792458 && clockold!>clock.now()){
+        print(vehicle.isTimeTravelling()); //True
+    }
+    sleep(1);
+    clockold = clock.increment();
+    vehicle.increaseSpeed();
 }
 
-print 'It took ' + i + ' iterations to sort the deck.';
 </code>
 </pre>
 
