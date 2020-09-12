@@ -33,12 +33,11 @@
               role in simulation.
             </small>
             <pre>
-                <code>
-v = new Vehicle(),c = new Clock();
+                <code>v = new Vehicle(),c = new Clock();
 
 while (v.isTraveling()) {
     c.increment();
-    if(v.speedInMeter === 299792458 && clOld!>c.now())
+    if(v.speedInMtr === 299792458 && clOld!>c.now())
         print(v.isTimeTravelling()); //True
     
     sleep(1);v.increaseSpeed();clOld = c.increment();
